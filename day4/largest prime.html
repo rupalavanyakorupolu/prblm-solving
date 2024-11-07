@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let s=2
+    let e=100
+    largest_prime=0
+    for(i=s;i<e;i++){
+        fact=0
+        for(j=2;j<i;j++){
+            if(i%j==0){
+            fact++
+            break
+        }
+    }
+    if(fact==0){
+       largest_prime=i
+    }
+}
+    console.log(largest_prime);
+
+    </script>  
+</body>
+</html>

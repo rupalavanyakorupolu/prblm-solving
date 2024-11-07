@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arm strong number</title>
+</head>
+<body>
+    <script>
+        num =+prompt("enter the number");
+        check= num;
+        final= num;
+        pow = 0;
+        sum = 0;
+        var arm = (num)=>{
+            while(num!==0){
+                num% 10;
+                num = Math.floor(num/10);
+                pow++
+            }
+            while(check !==0){
+                digit = check % 10;
+                sum = sum + digit ** pow;
+                check = Math.floor(check/10);
+            }
+            if(sum== final)console.log("it is an armstrong number");
+            else console.log("it not an   armstrong number");
+        }
+        arm(num);
+
+
+    </script>
+    
+</body>
+</html>

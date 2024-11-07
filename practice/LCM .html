@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 =+prompt("enter the  first number:");
+        let n2 =+prompt("enter the  second number:");
+        let n3 =+prompt("enter the  thrid number:");
+         
+    function gcd(a,b){
+        let gcdValue =0;
+        for (let i =1; i<= Math.min(a,b);i++){
+            if (a%i== 0 && b % i ===0) {
+                gcdValue = i;
+            }
+        }
+        return gcdValue;
+    }
+    function lcm(a,b) {
+        return (a*b)/gcd(a,b);
+
+    }
+    function  lcmOfThreeNumbers(n1, n2, n3) {
+        const lcm1 =lcm(n1, n2);
+        const finalLcm =lcm(lcm1,n3);
+        return finalLcm;
+    } 
+    console.log("LCM of",n1,"",n2,"and",n3,"is":"lcm of ThreeNumbers(n1, n2,n3));
+    </script>
+</body>
+</html>

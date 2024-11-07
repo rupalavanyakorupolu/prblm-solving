@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem solving</title>
+</head>
+<body>
+    <script>
+        // to print left matrix
+        // let matrix=[[1,2,3],[4,5,6],[7,8,9]]
+        // for(i=0;i<matrix.length;i++){
+        //     for(j=0;j<matrix[i].length;j++){
+        //         if(i===j){
+        //             console.log(matrix[i][j])
+        //         }
+        //     }
+        // }
+        //  to print diagonal matrix
+        let matrix=[[1,2,3],[4,5,6],[7,8,9]]
+        
+        for(i=0; i<matrix.length;i++){
+            for(j=matrix[i].length-1;j>=0;j--){
+                if(i+j==matrix[i].length-1){
+                    console.log(matrix[i][j])
+                }
+            }
+        }
+        //  to print middle matrix
+        // let matrix=[[1,2,3],[4,5,6],[7,8,9]]
+        // mid_row=Math.floor(matrix.length/2)
+        // mid_col=Math.floor(matrix[mid_row].length/2)
+        // for(i=0;i<matrix.length;i++){
+        //     for(j=0;j<matrix[i].length;j++){
+        //         if(i==mid_row&&j==mid_col){
+        //             continue
+        //         }
+        //         else{
+                    console.log(matrix[i][j])
+                    
+                }
+            }
+        }
+    </script>
+</body>
+</html>

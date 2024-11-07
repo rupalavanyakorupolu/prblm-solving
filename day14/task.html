@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        row=5;
+for(i=1;i<=row;i++)
+{
+ s=""
+ for(j=1;j<=row;j++)
+ {
+     if(i==j)
+     {
+       s=s+ "*"+" ";
+ }
+
+else
+{
+    s=s+j+ " ";
+}
+}
+console.log(s)
+}
+
+
+
+row=5
+count=25
+for(i=1;i<=row;i++){
+    s=" "
+    for(j=1;j<=row;j++){
+        if(count<10)
+        {
+            s=s+"0"+count+ " "
+            count--
+        }
+        else{
+            s=s+count+ " ";
+            count--;
+        }
+    }
+    console.log(s)
+}
+row=5
+count=1;
+for(i=1;i<=row;i++)
+{
+    s=" ";
+    for(j=1;j<=i;j++){
+        if(count<10){
+            s= s+ " 0"+count+ " ";
+            count++;
+        }
+        else{
+            s= s+ count+ " ";
+            count++;
+        }
+    }
+    console.log(s)
+}
+
+
+    </script>
+    
+</body>
+</html>

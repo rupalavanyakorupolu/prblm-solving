@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num =+prompt("enter a number");
+    let copy_num = num;
+    let length =0;
+    function lengthofNumber(){
+        while(num!=0){
+            num = Math.floor(num/10);
+            length++;
+        }
+        console.log("length of the number"+copy_num+"is"+length);
+    }
+    lengthofnumber(num)
+</script>
+</body>
+</html>
